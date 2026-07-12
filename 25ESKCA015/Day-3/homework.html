@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <style>
+    body{
+    background-color: rgb(40, 38, 38);
+    
+}
+.Sprint{
+    color:blue;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+nav{
+        background-color:rgb(241, 216, 200);
+        position: relative;
+        z-index: 100;
+}
+.nav-item:hover{
+font-weight: bold;
+}
+
+.nav-item{
+    gap: 20px;
+}
+.hero-text{
+    color: blue;
+font-size: 55px;
+}
+.card-link{
+    color: rgb(239, 20, 147);
+}
+.text h2{
+    padding-top: 80px;
+}
+.navbar-nav{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    margin-left: 120px;
+    font-weight: bold;
+    z-index: 1;
+}
+header{
+    position: relative;
+    overflow: hidden;
+}
+header img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+header  h1{
+color: white;
+gap: 20px;
+}
+header  h2{
+color: white;
+gap: 20px;
+}
+.list{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+section h1{
+        display: flex;
+   align-items: center;
+    justify-content: center;
+}
+section{
+        background-color: rgb(13, 13, 13);
+        color: white;
+}
+.list .card{
+    background-color: rgb(48, 89, 140);
+    color: white;
+}
+.team {
+        display: flex;
+  align-items: center;
+    justify-content: center;
+    margin-top: 70px; 
+}
+.team .card{
+  margin: auto;
+} 
+.card{
+    height: 286.4;
+    width:191.01;
+
+}
+.querry {
+    margin-top: 75px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px; 
+}
+.left, .right {
+  flex: 1; 
+}
+.left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; 
+}
+ section form{
+    background-color: #367b73;
+    border-radius: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    padding: 30px;
+}
+.faculty{
+    margin-top: 75px;
+    
+}
+.list{
+    margin-top: 75px;
+}
+
+
+.navbar-nav.me-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+
+@media (max-width: 992px) {
+    .text {
+        margin-left: 60px;
+        top: 18%;
+    }
+
+    .hero-text {
+        font-size: 40px;
+    }
+
+    .list,
+    .team {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .querry {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .left img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        flex: unset;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+ 
+    header {
+        position: relative;
+        display: block;
+        height: 100vw;
+        max-height: 520px;
+        overflow: hidden;
+    }
+
+    header img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        margin-left: 0;
+        padding: 60px 18px 22px;
+        background: linear-gradient(to top, rgba(0,0,0,0.85) 60%, transparent);
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        z-index: 1;
+    }
+
+   
+    .text.nav-is-open {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .text h1 {
+        font-size: 1.4rem;
+        color: white;
+    }
+
+    .hero-text {
+        font-size: 1.8rem;
+    }
+
+    .text h2 {
+        font-size: 0.82rem;
+        padding-top: 6px;
+        color: white;
+    }
+
+    
+    .list,
+    .team {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .list .card,
+    .team .card {
+        width: 100% !important;
+        max-width: 360px;
+    }
+
+    
+    .querry {
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 24px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        flex: unset;
+    }
+
+    .left img {
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    section form {
+        padding: 20px;
+    }
+}
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Code <span class="Sprint">Sprint</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faculty">Faculty </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#querry">Querry </a>
+          </li>
+        </ul>
+<button class="btn btn-success" type="button">Enroll Now</button>
+        <form class="d-flex " role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <img src="Gemini_Generated_Image_xx16xwxx16xwxx16.png" alt="">
+    <div class="text">
+      <h1>Learn.Build.</h1>
+      <h1>Become a</h1><span class="hero-text">Full Stack <br>Developer.</span>
+      <h2>Join our expert-led bootcamp and build <br>
+        real-world projects that get you hired.</h2>
+    </div>
+  </header>
+  <section>
+    <h1 id="courses" class="heading">Courses</h1>
+    <div class="list">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Python</h5>
+          
+          <p class="card-text">Tutorials covering all the basic Python command for administration and file system handling.</p>
+          <a href="#" class="card-link">  Playlist</a>
+          <a href="#" class="card-link">Notes</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Linux</h5>
+          
+          <p class="card-text">Tutorials covering all the basic linux
+command for administration and file
+system handling.</p>
+          <a href="#" class="card-link">Playlist</a>
+          <a href="#" class="card-link">Notes</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Java Script</h5>
+          
+          <p class="card-text">Tutorials covering all the basic JS command for administration and file system handling.</p>
+          <a href="#" class="card-link">Playlist</a>
+          <a href="#" class="card-link">Notes</a>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="faculty" class="faculty">Faculty Members</h1>
+    <div class="team">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1682096630303-83ea15caadca?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr. Amara Okafor</h5>
+          <p class="card-text">Specializes in designing and optimizing the low-level infrastructure required to train and deploy Large Language Models (LLMs). Elena is an expert in distributed computing, CUDA programming, and GPU cluster orchestration using Kubernetes. She bridges the gap between raw data science and high-performance engineering.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Elena Rostova</h5>
+          <p class="card-text">Specializes in designing and optimizing the low-level infrastructure required to train and deploy Large Language Models (LLMs). Elena is an expert in distributed computing, CUDA programming, and GPU cluster orchestration using Kubernetes. She bridges the gap between raw data science and high-performance engineering.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661589856899-6dd0871f9db6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chloe Vance</h5>
+          <p class="card-text">Specializes in designing and optimizing the low-level infrastructure required to train and deploy Large Language Models (LLMs). Elena is an expert in distributed computing, CUDA programming, and GPU cluster orchestration using Kubernetes. She bridges the gap between raw data science and high-performance engineering.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://images.unsplash.com/photo-1637589267610-6c66fc2a086b?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Marcus Vance</h5>
+          <p class="card-text">Specializes in designing and optimizing the low-level infrastructure required to train and deploy Large Language Models (LLMs). Elena is an expert in distributed computing, CUDA programming, and GPU cluster orchestration using Kubernetes. She bridges the gap between raw data science and high-performance engineering..</p>
+        </div>
+      </div>
+    </div>
+    <div id="querry" class="querry">
+      <div class="left">
+        <img
+          src="https://images.unsplash.com/photo-1673515335586-f9f662c01482?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="">
+      </div>
+      <div class="right">
+        <form>
+          <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email Address</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Contact Number</label>
+            <input type="number" class="form-control" id="">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Query??</label>
+            <input type="text" class="form-control" id="">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Hide hero text when mobile navbar opens, show when it closes
+    const navCollapse = document.getElementById('navbarSupportedContent');
+    const heroText   = document.querySelector('.text');
+
+    if (navCollapse && heroText) {
+      navCollapse.addEventListener('show.bs.collapse', function () {
+        if (window.innerWidth <= 992) {
+          heroText.classList.add('nav-is-open');
+        }
+      });
+      navCollapse.addEventListener('hide.bs.collapse', function () {
+        heroText.classList.remove('nav-is-open');
+      });
+    }
+  </script>
+</body>
+
+</html>

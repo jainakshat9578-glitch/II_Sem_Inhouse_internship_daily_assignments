@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="light">
+
+    <h1>Click Counter</h1>
+    <div class="counter">Clicks: <span id="clickCount">0</span></div>
+
+    <button class="reset-btn" id="resetBtn">Reset Count</button>
+    <button class="toggle-btn" id="toggleTheme">Toggle Dark/Light Mode</button>
+
+    <script src="test.js"></script>
+
+</body>
+
+</html>
